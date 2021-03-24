@@ -1,0 +1,6 @@
+project_name: fuel
+builds:
+  skip: true
+release:
+  github:
+  prerelease: auto
