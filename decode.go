@@ -22,6 +22,10 @@ type ItemUnmarshaler interface {
 	UnmarshalDynamoDBItem(item map[string]types.AttributeValue) error
 }
 
+func UnmarshalAppend(item map[string]types.AttributeValue, out interface{}) error {
+	return unmarshalAppend(item, out)
+}
+
 func UnmarshalItem(item map[string]types.AttributeValue, out interface{}) error {
 	return unmarshalItem(item, out)
 }
